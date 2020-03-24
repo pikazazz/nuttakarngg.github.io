@@ -218,6 +218,9 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 <script>
+    var URL = document.URL;
+    var countries  = URL.substring(29);
+    console.log(countries);
     const url = 'https://coronavirus-19-api.herokuapp.com/countries/thailand?';
     $(document).ready(async () => {
         const data = await init();
